@@ -1,0 +1,45 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+	margin: 50px 200px;
+	background-color: #343434;
+	overflow: hidden;
+  	padding: 10px 10px;
+	border-radius: 10px;
+}
+
+.navbar a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px; 
+	line-height: 25px;
+	border-radius: 4px;
+}
+
+.navbar a.logo {
+	font-size: 50px;
+  	font-weight: bold;
+}
+
+.right-part a:hover {
+	background-color: #2ecc71;
+	color: black;
+}
+
+.right-part {
+	float: right;
+}
+
+.floating-topics {
+	margin: 200px 200px 100px 200px;
+	background-color: red;
+}
+
+
+
