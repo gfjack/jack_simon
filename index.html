@@ -5,6 +5,7 @@
     <title>MyVote</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style/index.css">
+      <link rel="stylesheet" href="style/carousel.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -21,11 +22,82 @@
         </nav>
       </div>
 
-    <div class="floatings">
+      <div class="floatings">
+          <div id="MyCarousel" class="carousel slide" data-ride="carousel" style="height: 200px">
 
-        <p>this is the floating part</p>
+              <!-- The slideshow -->
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <ul class="slide">
+                          <li class="slide_piece1">
 
-    </div>
+                              <div class="piece_des">
+                                  <h4>Tile: </h4>
+                              </div>
+                              <hr>
+                              <div class="piece_pic">
+
+                              </div>
+
+                          </li>
+                          <li class="slide_piece2">
+                              <div class="piece_pic">
+
+                              </div>
+                              <div class="piece_des">
+                                  <h4>Tile: </h4>
+                              </div>
+                          </li>
+                          <li class="slide_piece3">
+                              <div class="piece_pic">
+
+                              </div>
+                              <div class="piece_des">
+                                  <h4>Tile: </h4>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="carousel-item">
+                      <ul class="slide">
+                          <li class="slide_piece1">
+                              <div class="piece_pic">
+
+                              </div>
+                              <div class="piece_des">
+                                  <h4>Tile: </h4>
+                              </div>
+                          </li>
+                          <li class="slide_piece2">
+                              <div class="piece_pic">
+
+                              </div>
+                              <div class="piece_des">
+                                  <h4>Tile: </h4>
+                              </div>
+                          </li>
+                          <li class="slide_piece3">
+                              <div class="piece_pic">
+
+                              </div>
+                              <div class="piece_des">
+                                  <h4>Tile: </h4>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+
+              <!-- Left and right controls -->
+              <a class="carousel-control-prev" href="#MyCarousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#MyCarousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+              </a>
+          </div>
+      </div>
 
     <div class="search">
 
@@ -65,7 +137,7 @@
 
       <div class="middle">
 
-        <a href="" class="random_link">to get a random</a>
+        <a href="" class="random_link">Roll!</a>
 
       </div>
 

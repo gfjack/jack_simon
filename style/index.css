@@ -1,9 +1,16 @@
 
 p {
-    color:White;
+    color:white;
+}
+
+h4 {
+    margin-top: 5px;
+    color: white;
+    overflow: hidden;
 }
 
 body {
+    position: static;
     background-color: #f6f5f2;
 	font-family: 'Roboto', sans-serif;
 }
@@ -55,7 +62,7 @@ body {
     width: 50%;
     height: 300px;
     margin-bottom: 30px;
-    background-color: white;
+    background-color: #f6f5f2;
 }
 
 /*start of the search bar css*/
@@ -237,7 +244,7 @@ div.middle a {
     width: 33%;
     height: 80px;
     margin-bottom: 30px;
-    background-color: #fff;
+    background-color: black;
     text-align: center;
 }
 
@@ -250,6 +257,7 @@ div.middle a {
 }
 
 div.add_more a{
+    color: white;
     text-decoration:none;
 }
 
@@ -260,5 +268,6 @@ li.category_title,li.rank_list_title{
     font-size: 20px;
     font-weight: bolder;
 }
+
 
 
