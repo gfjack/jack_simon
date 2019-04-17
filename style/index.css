@@ -5,6 +5,7 @@ p {
 
 body {
     background-color: #f6f5f2;
+	font-family: 'Roboto', sans-serif;
 }
 
 /*start of the navbar css*/
@@ -33,7 +34,7 @@ body {
 
 .navbar a.logo {
     float: left;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -54,10 +55,12 @@ body {
     width: 50%;
     height: 300px;
     margin-bottom: 30px;
-    background-color: #343434;
+    background-color: white;
 }
 
+/*start of the search bar css*/
 .search {
+    background-color: white;
     position: absolute;
     left: 60%;
     top: 440px;
@@ -65,9 +68,44 @@ body {
     height: 80px;
     padding: 0;
     margin-bottom: 30px;
-    background-color: #343434;
 }
 
+.widget-search {
+    width: 70%;
+    left: 8%;
+    top: 30%;
+    position: relative;
+    float: left;
+}
+
+.searchTerm {
+    float: right;
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 20px;
+}
+
+.searchButton{
+    position: absolute;
+    right: -30px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #343434;
+    background: #2ecc71;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*end of the search bar css*/
+
+
+/*start of the category slide bar css*/
 .category {
     position: absolute;
     left: 60%;
@@ -75,9 +113,40 @@ body {
     width: 15%;
     height: 300px;
     margin-bottom: 30px;
-    background-color: #343434;
+    background-color: white;
 }
 
+ul.category_list {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+ul.category_list li a{
+    color:black;
+}
+
+ul.category_list li a:hover
+{
+    text-decoration:none;
+    color: rgba(0, 128, 17, 0.82);
+}
+
+ul.category_list li{
+    list-style-type: none;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+div.category ul{
+    list-style:none;
+    background: white;
+    width: 100%;
+}
+/*end of the category slide bar css*/
+
+/*start of the ranking css*/
 .ranking {
     position: absolute;
     left: 60%;
@@ -85,9 +154,20 @@ body {
     width: 15%;
     height: 300px;
     margin-bottom: 30px;
-    background-color: #343434;
+    background-color: white;
 }
 
+ul.rank_list{
+    padding: 25px;
+}
+
+li.rank_list_title {
+    width: 100%;
+    list-style-type: none;
+}
+/*end of the ranking css*/
+
+/*start of the random css*/
 .random {
     position: absolute;
     left: 60%;
@@ -98,6 +178,47 @@ body {
     background-color: #343434;
 }
 
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.image {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.random:hover .image {
+    opacity: 0.3;
+}
+
+.random:hover .middle {
+    opacity: 1;
+}
+
+.random_link {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+div.middle a {
+    color: white;
+    text-decoration: none;
+}
+/*end of the random css*/
+
+
 .main_part {
     position: absolute;
     left: 25%;
@@ -105,7 +226,7 @@ body {
     width: 33%;
     height: 1200px;
     margin-bottom: 30px;
-    background-color: #343434;
+    background-color: white;
 }
 
 /*start of the add_more part css*/
@@ -127,4 +248,17 @@ body {
     position: center;
     color: black;
 }
+
+div.add_more a{
+    text-decoration:none;
+}
+
 /*end of the add_more part css*/
+
+
+li.category_title,li.rank_list_title{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
