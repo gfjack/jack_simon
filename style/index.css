@@ -3,7 +3,11 @@ p {
     color:White;
 }
 
+body {
+    background-color: #f6f5f2;
+}
 
+/*start of the navbar css*/
 .navbar {
     position: absolute;
     width: 50%;
@@ -13,13 +17,40 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #343434;
-
+    border-radius: 4px;
 }
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.navbar a.logo {
+    float: left;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.right-part a:hover {
+    background-color: #2ecc71;
+    color: black;
+}
+
+.right-part {
+    float: right;
+}
+/*end of the navbar css*/
 
 .floatings {
     position: absolute;
     left: 25%;
-    top: 130px;
+    top: 110px;
     width: 50%;
     height: 300px;
     margin-bottom: 30px;
@@ -29,7 +60,7 @@ p {
 .search {
     position: absolute;
     left: 60%;
-    top: 460px;
+    top: 440px;
     width: 15%;
     height: 80px;
     padding: 0;
@@ -40,7 +71,7 @@ p {
 .category {
     position: absolute;
     left: 60%;
-    top: 570px;
+    top: 550px;
     width: 15%;
     height: 300px;
     margin-bottom: 30px;
@@ -50,7 +81,7 @@ p {
 .ranking {
     position: absolute;
     left: 60%;
-    top: 900px;
+    top: 880px;
     width: 15%;
     height: 300px;
     margin-bottom: 30px;
@@ -60,7 +91,7 @@ p {
 .random {
     position: absolute;
     left: 60%;
-    top: 1230px;
+    top: 1210px;
     width: 15%;
     height: 300px;
     margin-bottom: 30px;
@@ -70,19 +101,30 @@ p {
 .main_part {
     position: absolute;
     left: 25%;
-    top: 460px;
+    top: 440px;
     width: 33%;
     height: 1200px;
     margin-bottom: 30px;
     background-color: #343434;
 }
 
+/*start of the add_more part css*/
 .add_more {
     position: absolute;
     left: 25%;
-    top: 1690px;
+    top: 1670px;
     width: 33%;
-    height: 50px;
-    margin-bottom: 50px;
-    background-color: #343434;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    text-align: center;
 }
+
+.add_button{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    position: center;
+    color: black;
+}
+/*end of the add_more part css*/
